@@ -1,0 +1,58 @@
+{
+  "fonte": "bench/gen (360) vs bench/reals (COCO)",
+  "modelo": "model.onnx",
+  "regimes": {
+    "limpo": {
+      "corte": 0.0012308716888439985,
+      "acuracia_balanceada": 0.9878,
+      "sensibilidade": 0.9806,
+      "especificidade": 0.995,
+      "n_pos": 360,
+      "n_neg": 200,
+      "fake_min": 6.1e-05,
+      "fake_mediana": 0.584095,
+      "real_max": 0.001669,
+      "real_mediana": 2e-06,
+      "acuracia_no_limiar_0_5": 0.7694
+    },
+    "jpeg75": {
+      "corte": 0.000606807168932991,
+      "acuracia_balanceada": 0.9183,
+      "sensibilidade": 0.9167,
+      "especificidade": 0.92,
+      "n_pos": 360,
+      "n_neg": 200,
+      "fake_min": 6e-06,
+      "fake_mediana": 0.062551,
+      "real_max": 0.013984,
+      "real_mediana": 8e-06,
+      "acuracia_no_limiar_0_5": 0.6208
+    },
+    "resize50": {
+      "corte": 0.00036162607318299643,
+      "acuracia_balanceada": 0.9483,
+      "sensibilidade": 0.9667,
+      "especificidade": 0.93,
+      "n_pos": 360,
+      "n_neg": 200,
+      "fake_min": 1.3e-05,
+      "fake_mediana": 0.105249,
+      "real_max": 0.006481,
+      "real_mediana": 7e-06,
+      "acuracia_no_limiar_0_5": 0.6625
+    },
+    "screenshot": {
+      "corte": 0.00026093295364031365,
+      "acuracia_balanceada": 0.9192,
+      "sensibilidade": 0.9333,
+      "especificidade": 0.905,
+      "n_pos": 360,
+      "n_neg": 200,
+      "fake_min": 5e-06,
+      "fake_mediana": 0.051265,
+      "real_max": 0.003738,
+      "real_mediana": 5e-06,
+      "acuracia_no_limiar_0_5": 0.6069
+    }
+  }
+}

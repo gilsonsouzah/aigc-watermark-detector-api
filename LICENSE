@@ -1,0 +1,29 @@
+Prova de conceito — uso não comercial
+
+Este repositório é uma prova de conceito / avaliação técnica. É disponibilizado para uso
+não comercial: estudo, pesquisa, avaliação e teste interno. Não há garantia de qualquer
+espécie, nem garantia de acurácia dos vereditos emitidos — ver "Tetos" no README, que
+descreve o que este detector NÃO consegue fazer.
+
+Uso comercial não é autorizado sem licença separada, porque o projeto integra componentes
+de terceiros cujas licenças proíbem uso comercial.
+
+Componentes de terceiros e suas licenças
+
+  c2pa-python                  Apache-2.0 / MIT     https://github.com/contentauth/c2pa-python
+  Pillow                       MIT-CMU              https://python-pillow.org
+  numpy                        BSD-3-Clause         https://numpy.org
+  FastAPI / Starlette / httpx  MIT / BSD-3-Clause
+  pypdf                        BSD-3-Clause         https://github.com/py-pdf/pypdf
+  defusedxml                   PSF-2.0
+
+  Pesos e dados usados apenas em calibração/medição, NÃO redistribuídos aqui:
+
+  gpt-image-synthid-detector   PolyForm Noncommercial 1.0.0
+                               https://github.com/newideas99/gpt-image-synthid-detector
+                               (baixado sob demanda por tools/export_synthid_surrogates.py;
+                                a camada community_probe fica desligada sem eles)
+
+  T2I-CoReBench-Images         Apache-2.0 (amostra usada para medir limiares)
+  COCO val2017                 termos do COCO / licenças dos originais no Flickr
+  Community Forensics          MIT para pesos; dataset com partes CC-BY-4.0 e CC-BY-NC-SA-4.0

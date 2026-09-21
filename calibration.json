@@ -1,0 +1,39 @@
+{
+  "fonte": "bench/scores.json",
+  "default_regime": "limpo",
+  "regimes": {
+    "limpo": {
+      "tau": 0.025,
+      "balanced_accuracy": 0.9428,
+      "sensibilidade": 0.9222,
+      "especificidade": 0.9633,
+      "n_pos": 360,
+      "n_neg": 300
+    },
+    "jpeg75": {
+      "tau": 0.04,
+      "balanced_accuracy": 0.9425,
+      "sensibilidade": 0.9583,
+      "especificidade": 0.9267,
+      "n_pos": 360,
+      "n_neg": 300
+    },
+    "resize50": {
+      "tau": 0.085,
+      "balanced_accuracy": 0.9239,
+      "sensibilidade": 0.9278,
+      "especificidade": 0.92,
+      "n_pos": 360,
+      "n_neg": 300
+    },
+    "screenshot": {
+      "tau": 0.145,
+      "balanced_accuracy": 0.6083,
+      "sensibilidade": 0.7333,
+      "especificidade": 0.4833,
+      "n_pos": 360,
+      "n_neg": 300
+    }
+  },
+  "tau": 0.025
+}

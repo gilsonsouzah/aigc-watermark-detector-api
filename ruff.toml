@@ -1,0 +1,8 @@
+# PoC: lint focado em erro real. BLE001/S110 (except Exception amplo) são deliberados nas
+# camadas de parsing — arquivo de entrada é hostil por natureza e uma camada que estoura não
+# pode derrubar a análise inteira; o erro vai para `notes`/`signals` em vez de virar 5xx.
+line-length = 120
+
+[lint]
+# SIM102/RUF046: aninhamento e cast explícitos ajudam a ler a condição; não são erro.
+ignore = ["BLE001", "S110", "S112", "B008", "ISC003", "ISC004", "SIM102", "RUF046"]

@@ -1,0 +1,32 @@
+[project]
+name = "aiwd"
+version = "0.1.0"
+description = "API que estima se um arquivo (imagem ou documento) foi gerado por IA"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "httpx>=0.27",
+    "pillow>=10.4",
+    "numpy>=2.0",
+    "defusedxml>=0.7",
+    "pypdf>=5.0",
+    "c2pa-python>=0.6",
+    "python-multipart>=0.0.9",
+]
+
+[project.optional-dependencies]
+# sonda neural local (camada community_probe). Sem isto o projeto roda só com as camadas offline.
+onnx = ["onnxruntime>=1.20"]
+# leitura de rótulo escrito na imagem (OCR clássico, ONNX, sem modelo neural pesado)
+ocr = ["rapidocr>=3.0"]
+
+[project.scripts]
+aiwd = "aiwd.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aiwd"]
